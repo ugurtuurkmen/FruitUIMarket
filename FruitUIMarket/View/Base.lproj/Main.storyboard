@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aKu-NN-f7d">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sing In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SingInViewController" customModule="FruitUIMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lIf-7J-h32">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdA-WG-7kF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="378"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signInImage" translatesAutoresizingMaskIntoConstraints="NO" id="c96-Dq-arP">
+                                                <rect key="frame" x="40" y="40" width="334" height="238"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fruit Market" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7T2-29-7BD">
+                                                <rect key="frame" x="50" y="308" width="314" height="70"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="35"/>
+                                                <color key="textColor" red="0.4551218152" green="0.66572886710000001" blue="0.25810205939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="c96-Dq-arP" secondAttribute="trailing" constant="40" id="31j-u6-Xtb"/>
+                                            <constraint firstAttribute="bottom" secondItem="7T2-29-7BD" secondAttribute="bottom" id="ALh-Jd-qZ5"/>
+                                            <constraint firstAttribute="trailing" secondItem="7T2-29-7BD" secondAttribute="trailing" constant="50" id="J0Q-ai-1UV"/>
+                                            <constraint firstItem="c96-Dq-arP" firstAttribute="top" secondItem="kdA-WG-7kF" secondAttribute="top" constant="40" id="Kql-3D-XPZ"/>
+                                            <constraint firstItem="c96-Dq-arP" firstAttribute="leading" secondItem="kdA-WG-7kF" secondAttribute="leading" constant="40" id="ht3-cC-wWG"/>
+                                            <constraint firstItem="7T2-29-7BD" firstAttribute="top" secondItem="c96-Dq-arP" secondAttribute="bottom" constant="30" id="nJT-rF-sNK"/>
+                                            <constraint firstAttribute="bottom" secondItem="c96-Dq-arP" secondAttribute="bottom" constant="100" id="rGI-qo-PDT"/>
+                                            <constraint firstItem="7T2-29-7BD" firstAttribute="leading" secondItem="kdA-WG-7kF" secondAttribute="leading" constant="50" id="wUi-2b-tjB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRp-Zi-Ewp">
+                                        <rect key="frame" x="0.0" y="378" width="414" height="396"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Mobile Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ie3-Hg-pfL">
+                                                <rect key="frame" x="30" y="50" width="354" height="6"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lam-Q2-23q">
+                                                <rect key="frame" x="170" y="106" width="74" height="60"/>
+                                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gMy-zo-wf6">
+                                                <rect key="frame" x="30" y="216" width="354" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBh-Tw-7su">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="50"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="googleIcon" title="Log In With" imagePadding="10"/>
+                                                        <connections>
+                                                            <segue destination="iBz-ub-mIm" kind="presentation" modalPresentationStyle="fullScreen" id="OPN-fQ-gbf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2n-tM-BxG">
+                                                        <rect key="frame" x="182" y="0.0" width="172" height="50"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="facebookIcon" title="Log In With" imagePadding="10"/>
+                                                        <connections>
+                                                            <segue destination="iBz-ub-mIm" kind="presentation" modalPresentationStyle="fullScreen" id="BmI-Ae-Y27"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="gMy-zo-wf6" secondAttribute="trailing" constant="30" id="4bq-FD-vR5"/>
+                                            <constraint firstAttribute="bottom" secondItem="lam-Q2-23q" secondAttribute="bottom" constant="230" id="6kL-Bb-ScH"/>
+                                            <constraint firstItem="gMy-zo-wf6" firstAttribute="top" secondItem="lam-Q2-23q" secondAttribute="bottom" constant="50" id="Bde-qx-b9L"/>
+                                            <constraint firstItem="Ie3-Hg-pfL" firstAttribute="leading" secondItem="uRp-Zi-Ewp" secondAttribute="leading" constant="30" id="BuJ-sI-cG4"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ie3-Hg-pfL" secondAttribute="trailing" constant="30" id="QkO-hR-Trp"/>
+                                            <constraint firstAttribute="bottom" secondItem="gMy-zo-wf6" secondAttribute="bottom" constant="130" id="TWh-NZ-gz0"/>
+                                            <constraint firstItem="Ie3-Hg-pfL" firstAttribute="top" secondItem="uRp-Zi-Ewp" secondAttribute="top" constant="50" id="VoY-xh-8b7"/>
+                                            <constraint firstItem="lam-Q2-23q" firstAttribute="top" secondItem="Ie3-Hg-pfL" secondAttribute="bottom" constant="50" id="ZhN-KG-X2T"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ie3-Hg-pfL" secondAttribute="bottom" constant="340" id="dpQ-e8-yc4"/>
+                                            <constraint firstAttribute="trailing" secondItem="lam-Q2-23q" secondAttribute="trailing" constant="170" id="fVs-b3-ErD"/>
+                                            <constraint firstItem="lam-Q2-23q" firstAttribute="leading" secondItem="uRp-Zi-Ewp" secondAttribute="leading" constant="170" id="koC-R1-Byh"/>
+                                            <constraint firstItem="gMy-zo-wf6" firstAttribute="leading" secondItem="uRp-Zi-Ewp" secondAttribute="leading" constant="30" id="vNY-Co-cJF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="uRp-Zi-Ewp" firstAttribute="top" secondItem="lIf-7J-h32" secondAttribute="top" constant="378" id="8sK-yb-jAj"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lIf-7J-h32" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3Ja-7z-aNg"/>
+                            <constraint firstItem="lIf-7J-h32" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7tx-0n-ydy"/>
+                            <constraint firstAttribute="trailing" secondItem="lIf-7J-h32" secondAttribute="trailing" id="Emg-2J-2SY"/>
+                            <constraint firstItem="lIf-7J-h32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="R2u-ga-GIW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Uoo-Pk-K8i"/>
+                    <connections>
+                        <outlet property="facebookButton" destination="B2n-tM-BxG" id="DwP-Pg-RHY"/>
+                        <outlet property="googleButton" destination="ZBh-Tw-7su" id="Qms-Wt-cJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="97.767857142857139"/>
+        </scene>
+        <!--Shopping Cart-->
+        <scene sceneID="Zzu-AV-MPy">
+            <objects>
+                <viewController id="yQv-Fc-YrB" customClass="ShoppingViewController" customModule="FruitUIMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EYd-19-1ZI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shopping" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSy-pw-BVE">
+                                <rect key="frame" x="145" y="421" width="124" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3rN-uq-TYG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Shopping Cart" image="bag" catalog="system" id="Eiq-2v-p5j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ya6-Yd-Aqr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637.68115942029" y="-185.49107142857142"/>
+        </scene>
+        <!--My Account-->
+        <scene sceneID="3TK-hl-S0a">
+            <objects>
+                <viewController id="Tyl-8c-doh" customClass="MyAccountViewController" customModule="FruitUIMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kD7-ph-Aax">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRD-tC-USO">
+                                <rect key="frame" x="8" y="421" width="398" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bpb-Av-o3f"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Account" image="person" catalog="system" id="TUa-w3-tBw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CKZ-hN-HTr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637.68115942029" y="1115.625"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="KWD-Z0-jJK">
+            <objects>
+                <viewController id="orm-c3-GaO" customClass="HomeViewController" customModule="FruitUIMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YG4-A1-4Ds">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxP-Rt-AZ3">
+                                <rect key="frame" x="174" y="417" width="67" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9MO-jU-LeU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="3pM-P9-WfL">
+                        <imageReference key="image" image="homekit" catalog="system" symbolScale="large"/>
+                        <color key="badgeColor" red="0.4551218152" green="0.66572886710000001" blue="0.25810205939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1C-PB-XoH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637.68115942029" y="-836.38392857142856"/>
+        </scene>
+        <!--Favourite-->
+        <scene sceneID="nYs-dv-GCU">
+            <objects>
+                <viewController id="X8r-N7-3rg" customClass="FavouriteViewController" customModule="FruitUIMarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bK4-Ne-iEN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favourite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19F-oR-QAt">
+                                <rect key="frame" x="143" y="429" width="129" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UUW-f8-cU3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favourite" image="heart" catalog="system" id="K4E-Ur-UgU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z8n-dh-NCN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2637.68115942029" y="463.39285714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PA8-pa-CQs">
+            <objects>
+                <tabBarController id="iBz-ub-mIm" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TRo-uo-pMD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.4551218152" green="0.66572886710000001" blue="0.25810205939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="orm-c3-GaO" kind="relationship" relationship="viewControllers" id="oKa-K7-mOX"/>
+                        <segue destination="yQv-Fc-YrB" kind="relationship" relationship="viewControllers" id="lbF-ON-bW8"/>
+                        <segue destination="X8r-N7-3rg" kind="relationship" relationship="viewControllers" id="RTv-V7-CYa"/>
+                        <segue destination="Tyl-8c-doh" kind="relationship" relationship="viewControllers" id="pI2-Yx-1QU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYe-Ti-qUk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1747.826086956522" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K0j-Jc-9aH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aKu-NN-f7d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nff-uP-AQe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="S4f-tF-DML"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nif-jD-sMv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="BmI-Ae-Y27"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="bag" catalog="system" width="128" height="128"/>
+        <image name="facebookIcon" width="29" height="29"/>
+        <image name="googleIcon" width="26" height="26"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="signInImage" width="221" height="166"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
